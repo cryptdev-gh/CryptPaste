@@ -11,10 +11,10 @@
 
 ### Installation
 
-1. Clone the repository
-2. Install the requirements
-3. Run the main file
-4. Enjoy
+1. Clone repo
+2. Customize your instance in the config.json
+3. Run the script.sh (for developpement the docker compose is soon!)
+4. have fun
 
 
 ### Requirements

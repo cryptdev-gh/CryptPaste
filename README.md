@@ -1,29 +1,27 @@
-# CRYPTPASTE
+# 🖌 CryptPaste
 
 **A open-source pastebin alternative**
 
-### Features
+### ✨ Features
 
-- [-] Simple and easy to use
+- [ ] Simple and easy to use
 - [X] Password protected pastes
 - [X] Admin Panel
-- [/] API (in progress)
+- [ ] API (in progress)
 
-### Installation
+### ⚙️ Installation
 
-1. Clone repo
+1. Clone the repository
 2. Customize your instance in the config.json
 3. Run the script.sh (for developpement the docker compose is soon!)
-4. have fun
+4. Have fun!
 
 
-### Requirements
+### 🔖 Requirements
 
 - Python 3.x
 - Flask
 - SQLAlchemy
-- A computer 
-- A brain
 
 ### License
 

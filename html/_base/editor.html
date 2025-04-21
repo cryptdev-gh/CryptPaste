@@ -1,0 +1,63 @@
+
+<link rel="stylesheet" data-name="vs/editor/editor.main"
+    href="/static/editor/editor.css">
+<style>
+    #container {
+      position: absolute;
+      top: 76px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    #paste_button {
+      position: fixed;
+      bottom: 20px; 
+      right: 20px; 
+      width: 100px;
+      height: 40px;
+      background-color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+      border: none;
+      cursor: pointer;
+      z-index: 10; 
+    }
+</style>
+<main_editor_cnd>
+
+
+  <div id="container"></div>
+
+  <script src="/static/editor/editor.js"></script>
+  <script src="/static/editor/paste.js"></script>
+  <script>
+    var editor = null;
+    require.config({
+      paths: {
+        'vs': 'https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.26.1/min/vs'
+      }
+    });
+
+    require(["vs/editor/editor.main"], () => {
+      editor = monaco.editor.create(document.getElementById('container'), {
+        value: `==========================================
+     -- Hey, welcome to {{ config.name }} 🎉🎉 --
+==========================================
+
+This is a self-hosted instance of CryptPaste 🚀🌟!
+You can use it to store pastes, etc. 📝📂
+
+Have fun! 🎉
+
+PS: Click the button 'Paste' to paste your text! 👉✍️
+`,
+        language: 'markdown',
+        theme: 'vs-dark',
+      });
+    });
+  </script>
+  <div id="control_p">
+    <button id="paste_button" onclick="newPaste()">Paste</button>
+  </div>
+    
+
+</main_editor_cnd>

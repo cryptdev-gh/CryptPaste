@@ -39,7 +39,7 @@
 
     require(["vs/editor/editor.main"], () => {
       editor = monaco.editor.create(document.getElementById('container'), {
-        value: `{{ app.description }}`,
+        value: `{{ config.description }}`,
         language: 'markdown',
         theme: 'vs-dark',
       });

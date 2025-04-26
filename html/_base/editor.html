@@ -39,17 +39,7 @@
 
     require(["vs/editor/editor.main"], () => {
       editor = monaco.editor.create(document.getElementById('container'), {
-        value: `==========================================
-     -- Hey, welcome to {{ config.name }} 🎉🎉 --
-==========================================
-
-This is a self-hosted instance of CryptPaste 🚀🌟!
-You can use it to store pastes, etc. 📝📂
-
-Have fun! 🎉
-
-PS: Click the button 'Paste' to paste your text! 👉✍️
-`,
+        value: `{{ app.description }}`,
         language: 'markdown',
         theme: 'vs-dark',
       });

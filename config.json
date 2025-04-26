@@ -12,8 +12,8 @@
         "url":"sqlite:///db.sqlite3"
     },
     "app":{
-        "name":"DevPaste",
-        "description":"A simple pastebin application"
+        "name":"ChangeThisNameInJson",
+        "description":"Welcome to your fresh CryptPaste Instance !"
     },
     "auth":{
         "username":"admin",

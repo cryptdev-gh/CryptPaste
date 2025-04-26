@@ -34,7 +34,7 @@ def view_paste():
 Paste ID : {paste_id}
 Date : {time.ctime(paste.date)}
 Raw URL : /raw/{paste_id}'''
-        paste_text = html.escape(paste_text)
+        #paste_text = html.escape(paste_text) >> DISABLED TEMP
         return render_template('view.html',paste_text=paste_text)
     except Exception as e:
         return "Error: " + str(e)
